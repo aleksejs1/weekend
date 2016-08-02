@@ -163,6 +163,21 @@ html{
   background: #2b1c3d;
 }
 
+#smap{
+  width: 100%;
+  overflow: overlay;
+}
+
+#cmap{
+  width: 100%;
+  overflow: overlay;
+}
+
+#fmap{
+  width: 100%;
+  overflow: overlay;
+}
+
 .ti{
   width: 50px;
   float: left;
