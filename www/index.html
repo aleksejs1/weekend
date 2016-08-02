@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="SLprod.lv">
+    <title>Weekend Baltics Unofficial App</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Weekend Baltics Unofficial App</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><span class="lnk" onclick="fmap()">Festival Map</span></li>
+            <li><span class="lnk" onclick="cmap()">City Map</span></li>
+            <li><span class="lnk" onclick="smap()">Schedule</span></li>
+            <li><a href="http://slprod.lv/">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="control-label">Name</label>
+              <input type="text" class="form-control" id="sig_nam">
+              <a type="button" class="btn btn-default" onclick="changeSig()">Save</a>
+            </div>
+            <div class="form-group">
+              <label>Coordinates</label>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">X</label>
+              <div class="col-sm-10">
+                <p class="form-control-static" id="x_coo">0</p>
+              </div>
+              <label class="col-sm-2 control-label">Y</label>
+              <div class="col-sm-10">
+                <p class="form-control-static" id="y_coo">0</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Address</label>
+              <div class="col-sm-10">
+                <p class="form-control-static" id="add_coo"></p>
+              </div>
+            </div>
+            
+          </form>
+          <div id="popup"></div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <div id="mm"></div>
+          <div class="mmm" id="fmap"><img src="img/fmap.jpg"></div>
+          <div class="mmm" id="cmap"><img src="img/cmap.jpg"></div>
+          <div  id="smap">
+            <div class="ml" id="dats"><div class="ss">Thursday</div><div class="ti">14:00</div><div class="ti2">14:15</div><div class="ti">14:30</div><div class="ti2">14:45</div><div class="ti">15:00</div><div class="ti2">15:15</div><div class="ti">15:30</div><div class="ti2">15:45</div><div class="ti">16:00</div><div class="ti2">16:15</div><div class="ti">16:30</div><div class="ti2">16:45</div><div class="ti">17:00</div><div class="ti2">17:15</div><div class="ti">17:30</div><div class="ti2">17:45</div><div class="ti">18:00</div><div class="ti2">18:15</div><div class="ti">18:30</div><div class="ti2">18:45</div><div class="ti">19:00</div><div class="ti2">19:15</div><div class="ti">19:30</div><div class="ti2">19:45</div><div class="ti">20:00</div><div class="ti2">20:15</div><div class="ti">20:30</div><div class="ti2">20:45</div><div class="ti">21:00</div><div class="ti2">21:15</div><div class="ti">21:30</div><div class="ti2">21:45</div><div class="ti">22:00</div><div class="ti2">22:15</div><div class="ti">22:30</div><div class="ti2">22:45</div><div class="ti">23:00</div><div class="ti2">23:15</div><div class="ti">23:30</div><div class="ti2">23:45</div><div class="ti">0:00</div><div class="ti2">0:15</div><div class="ti">0:30</div><div class="ti2">0:45</div></div>
+            <div class="ml" id="s1"><div class="ss">Stage</div><div class="pause"> .</div><div class="artist">Afrojack</div><div class="pause"> .</div><div class="artist">Afrojack</div></div>
+            <div class="ml" id="s2"><div class="ss">Stage</div></div>
+            <div class="ml" id="s3"><div class="ss">Stage</div></div>
+            <div class="ml" id="s4"><div class="ss">Stage</div></div>
+          </div>
+      </div>
+    </div>
+
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+	<script src='js/index.js'></script>
+	<script type="text/javascript">
+	    app.initialize();
+	</script>
+  </body>
+</html>

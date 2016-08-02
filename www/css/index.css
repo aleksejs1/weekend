@@ -1,0 +1,50 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: #999;
+}
+
+#tit {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+}
+#spd {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 7em;
+  text-align: center;
+  vertical-align: middle;
+}
+#addi {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 5em;
+  text-align: center;
+  vertical-align: middle;
+}
+#asi {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  vertical-align: middle;
+}
+#war {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 7em;
+  text-align: center;
+  vertical-align: middle;
+  color: red;
+}
