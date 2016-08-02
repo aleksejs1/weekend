@@ -65,7 +65,7 @@ function fmap(){
 }
 function cmap(){
 	hall();
-	$("#fmap").html('<img src="img/cmap.jpg">');
+	$("#cmap").html('<img src="img/cmap.jpg">');
 	$("#cmap").show();
 }
 function smap(){
