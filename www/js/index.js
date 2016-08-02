@@ -56,10 +56,12 @@ function hall(){
 
 function fmap(){
 	hall();
+	$("#fmap").html('<img src="img/fmap.jpg">');
 	$("#fmap").show();
 }
 function cmap(){
 	hall();
+	$("#fmap").html('<img src="img/cmap.jpg">');
 	$("#cmap").show();
 }
 function smap(){
