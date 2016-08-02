@@ -29,8 +29,21 @@ function init(){
 
 	var l12 = mkln([{cls:"pause pa15",nm:"."},{cls:"artist ar60",nm:"TEMPER2"},{cls:"pause pa15",nm:"."},{cls:"artist ar60",nm:"SYN COLE"},{cls:"pause pa15",nm:"."},{cls:"artist ar60",nm:"AXWELL & INGRESSO"},{cls:"pause pa15",nm:"."},{cls:"artist ar60",nm:"OTTO KNOWS"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"SHOWTEK"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"ROBIN SHULZ"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"MARTIN GARRIX"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"TIESTO"}]);
 	var l22 = mkln([{cls:"pause pa60",nm:"."},{cls:"artist ar60",nm:"ELINA BORN"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"I WEAR EXPERIMENT"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"PER"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"ALAN WALKER"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"BRAINSTORM"}]);
+	var l32 = mkln([{cls:"pause pa60",nm:"."},{cls:"artist ar60",nm:"JUSTIN PRIME"},{cls:"artist ar60",nm:"TIGERLILY"},{cls:"artist ar60",nm:"CHICANE"},{cls:"artist ar60",nm:"ARONCHUPA"},{cls:"artist ar60",nm:"ALEX MATTSON"},{cls:"artist ar60",nm:"BRENNAN HEART"},{cls:"artist ar60",nm:"MICHAEL CALFAN"},{cls:"artist ar60",nm:"HEADHUNTERZ"}]);
+	var l42 = mkln([{cls:"pause pa60",nm:"."},{cls:"artist ar60",nm:"ERKKI SARPUU"},{cls:"artist ar60",nm:"ANDRES PUUSEPP"},{cls:"artist ar60",nm:"KERMO HERT"},{cls:"artist ar60",nm:"SVEN ARUSOO"},{cls:"artist ar60",nm:"PLANEET"},{cls:"artist ar60",nm:"BOMBOSSA BROTHERS"},{cls:"artist ar60",nm:"DR. PHILGOOD"},{cls:"artist ar60",nm:"[EX] DA BASS"},{cls:"artist ar60",nm:"ORKIDEA"}]);
 	$("#s12").html('<div class="ss">WKND stage</div>'+l12);
-	$("#s22").html('<div class="ss">WKND stage</div>'+l22);
+	$("#s22").html('<div class="ss">WKND Live stage</div>'+l22);
+	$("#s32").html('<div class="ss">Future stage</div>'+l32);
+	$("#s42").html('<div class="ss">Digital stage</div>'+l42);
+
+	var l13 = mkln([{cls:"pause pa90",nm:"."},{cls:"pause pa60",nm:"."},{cls:"artist ar60",nm:"NETSKY"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"ATB"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"TUNGEVAAG & RAABAN"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"RUDIMENTAL DJ"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"AFROJACK"},{cls:"pause pa30",nm:"."},{cls:"artist ar60",nm:"DMITRI VEGAS & LIKE MIKE"}]);
+	var l23 = mkln([{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"EPORDWERK"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"WURFFEL"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"NOEP"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"ISAC ELLIOT"},{cls:"pause pa45",nm:"."},{cls:"artist ar60",nm:"CARTOON"}]);
+	var l33 = mkln([{cls:"pause pa60",nm:"."},{cls:"artist ar60",nm:"RADISTAI"},{cls:"artist ar60",nm:"PEP & RASH"},{cls:"artist ar60",nm:"WILDSTYLEZ"},{cls:"artist ar60",nm:"COONE"},{cls:"artist ar60",nm:"DA TWEEKAZ"},{cls:"artist ar60",nm:"BASSJACKERS"},{cls:"pause pa15",nm:"."},{cls:"artist ar60",nm:"SIGALA"},{cls:"artist ar60",nm:"DON DIABLO"}]);
+	var l43 = mkln([{cls:"artist ar60",nm:"HOT N'HANDSOM"},{cls:"artist ar60",nm:"DIANA D"},{cls:"artist ar60",nm:"LIA LASSE"},{cls:"artist ar60",nm:"FUTURISTIK"},{cls:"artist ar60",nm:"COVERK X BYTE"},{cls:"artist ar60",nm:"NISKERONE"},{cls:"artist ar60",nm:"ALEX WAVE"},{cls:"artist ar60",nm:"MHKL"},{cls:"artist ar60",nm:"PROTEUS"},{cls:"artist ar60",nm:"THE SECOND LEVEL"}]);
+	$("#s13").html('<div class="ss">WKND stage</div>'+l13);
+	$("#s23").html('<div class="ss">WKND Live stage</div>'+l23);
+	$("#s33").html('<div class="ss">Future stage</div>'+l33);
+	$("#s43").html('<div class="ss">Digital stage</div>'+l43);
 }
 
 
