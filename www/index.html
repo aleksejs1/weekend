@@ -2,76 +2,79 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="SLprod.lv">
-    <title>Weekend Baltics Unofficial App</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/dashboard.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Weekend Baltics Unofficial App</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li><span class="lnk" onclick="fmap()" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Festival Map</span></li>
-            <li><span class="lnk" onclick="cmap()" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">City Map</span></li>
-            <li><span class="lnk" onclick="smap()" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Schedule</span></li>
-            <li><a href="http://weekendbaltic.com/en/home/">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <div id="mm"></div>
-          <div class="mmm" id="fmap"></div>
-          <div class="mmm" id="cmap"></div>
-          <div id="smap">
-            <div class="tit">&nbsp;<br>Thursday</div>
-            <div class="ml" id="dats"></div>
-            <div class="ml" id="s1"><div class="ss">Stage</div></div>
-            <div class="ml" id="s2"><div class="ss">Stage</div></div>
-            <div class="ml" id="s3"><div class="ss">Stage</div></div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="SLprod.lv">
+  <title>Weekend Baltics Unofficial App</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Weekend Baltics Unofficial App</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li><span class="lnk" onclick="fmap()" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Festival Map</span></li>
+        <li><span class="lnk" onclick="cmap()" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">City Map</span></li>
+        <li><span class="lnk" onclick="smap()" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Schedule</span></li>
+        <li><a href="https://weekendbaltic.com/">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 main">
+      <div id="mm"></div>
+      <div class="mmm" id="fmap"></div>
+      <div class="mmm" id="cmap"></div>
+      <div id="smap">
+        <div class="tit">&nbsp;<br>Thursday</div>
+        <div class="ml" id="dats"></div>
+        <div class="ml" id="s1"><div class="ss">Stage</div></div>
+        <div class="ml" id="s2"><div class="ss">Stage</div></div>
+        <div class="ml" id="s3"><div class="ss">Stage</div></div>
+        <div class="ml" id="s4"><div class="ss">Stage</div></div>
 
 
-            <div class="tit">&nbsp;<br>Friday</div>
-            <div class="ml" id="dats1"></div>
-            <div class="ml" id="s12"><div class="ss">Stage</div></div>
-            <div class="ml" id="s22"><div class="ss">Stage</div></div>
-            <div class="ml" id="s32"><div class="ss">Stage</div></div>
+        <div class="tit">&nbsp;<br>Friday</div>
+        <div class="ml" id="dats1"></div>
+        <div class="ml" id="s12"><div class="ss">Stage</div></div>
+        <div class="ml" id="s22"><div class="ss">Stage</div></div>
+        <div class="ml" id="s32"><div class="ss">Stage</div></div>
+        <div class="ml" id="s42"><div class="ss">Stage</div></div>
 
 
-            <div class="tit">&nbsp;<br>Saturday</div>
-            <div class="ml" id="dats2"></div>
-            <div class="ml" id="s13"><div class="ss">Stage</div></div>
-            <div class="ml" id="s23"><div class="ss">Stage</div></div>
-            <div class="ml" id="s33"><div class="ss">Stage</div></div>
-            <div class="ml" id="s43"><div class="ss">.</div></div>
-          </div>
+        <div class="tit">&nbsp;<br>Saturday</div>
+        <div class="ml" id="dats2"></div>
+        <div class="ml" id="s13"><div class="ss">Stage</div></div>
+        <div class="ml" id="s23"><div class="ss">Stage</div></div>
+        <div class="ml" id="s33"><div class="ss">Stage</div></div>
+        <div class="ml" id="s43"><div class="ss">Stage</div></div>
+        <div class="ml" id="s53"><div class="ss">.</div></div>
       </div>
     </div>
+  </div>
 
-	<script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-	<script src='js/index_1.js'></script>
-	<script type="text/javascript">
-	    app.initialize();
-	</script>
-  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src='js/index_1.js'></script>
+  <script type="text/javascript">
+      app.initialize();
+  </script>
+</body>
 </html>
